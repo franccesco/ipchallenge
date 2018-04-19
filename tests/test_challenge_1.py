@@ -23,8 +23,6 @@ class TestModules(unittest.TestCase):
                         msg="The file __init__.py was not found in'modules/'")
         self.assertTrue(isfile(self.modules_dir + self.ip_class),
                         msg="The file ipinfo.py was not found in'modules/'")
-        print('Challenge #1 was a success!')
-        print('Please proceed with Challenge #2\n')
 
 
 if __name__ == '__main__':
