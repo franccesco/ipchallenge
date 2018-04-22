@@ -5,7 +5,7 @@ from modules import IPInfo
 
 
 class TestIPInfoREPR(unittest.TestCase):
-    """Test IPInfo's first method."""
+    """Test IPInfo's Repr method."""
 
     def setUp(self):
         """Set up test variables."""
