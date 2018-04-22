@@ -14,9 +14,15 @@ class TestIPInfoMethod1(unittest.TestCase):
 
     def test_documentation(self):
         """Test class and method documentation."""
-        self.assertIsInstance(modules.__doc__, str)
-        self.assertIsInstance(modules.ipinfo.__doc__, str)
-        self.assertIsInstance(self.ip_info.__doc__, str)
-        self.assertIsInstance(self.ip_info.__init__.__doc__, str)
-        self.assertIsInstance(self.ip_info.__repr__.__doc__, str)
-        self.assertIsInstance(self.ip_info.__iter__.__doc__, str)
+        self.assertIsInstance(modules.__doc__, str,
+                              msg="__init__.py lacks documentation")
+        self.assertIsInstance(modules.ipinfo.__doc__, str,
+                              msg="ipinfo.py lacks top documentation")
+        self.assertIsInstance(self.ip_info.__doc__, str,
+                              msg="class IPInfo lacks documentation.")
+        self.assertIsInstance(self.ip_info.__init__.__doc__, str,
+                              msg="Init method in class lacks documentation")
+        self.assertIsInstance(self.ip_info.__repr__.__doc__,
+                              str, msg="Class repr lacks documentation.")
+        self.assertIsInstance(self.ip_info.__iter__.__doc__,
+                              str, msg="Iteration method lacks documentation.")
