@@ -16,7 +16,7 @@ class TestIPInfo(unittest.TestCase):
         """Test attributes in self.class"""
         attribute_count = (len(self.ip_info.__dict__.keys()))
         self.assertEqual(attribute_count, 1,
-                         msg="The'res more than one 'self.' in that class.")
+                         msg="There's more than one 'self.' in that class.")
 
     def test_if_ip_data_return_dictionary(self):
         """Test if self.ip_info.ip_data returns a JSON line."""
