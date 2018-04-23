@@ -19,7 +19,7 @@ class TestIPInfo(unittest.TestCase):
                          msg="There's more than one 'self.' in that class.")
 
     def test_if_ip_data_return_dictionary(self):
-        """Test if self.ip_info.ip_data returns a JSON line."""
-        self.assertIsInstance(self.ip_info.ip_data, dict,
-                              msg="ip_data doesn't return a dict string.")
-        self.assertTrue(dumps(self.ip_info.ip_data))
+        """Test if self.ip_info.data returns a JSON line."""
+        self.assertIsInstance(self.ip_info.data, dict,
+                              msg="data doesn't return a dict string.")
+        self.assertTrue(dumps(self.ip_info.data))
