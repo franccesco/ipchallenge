@@ -13,5 +13,5 @@ class TestIPException(unittest.TestCase):
 
     def test_exception(self):
         """Test if exception is catched."""
-        with self.assertRaises(OSError):
+        with self.assertRaises(ValueError):
             IPInfo(self.invalid_ip)
