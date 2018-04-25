@@ -1,0 +1,4 @@
+# Coverage configuratino file
+[run]
+source =
+    .
