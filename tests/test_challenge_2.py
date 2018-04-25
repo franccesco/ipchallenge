@@ -37,7 +37,3 @@ class TestIncludeInit(unittest.TestCase):
                       msg="You haven't import IPInfo in __init__.py")
         self.assertIn(self.all_special_method, init_contents,
                       msg="__all__ is not defined in __init__.py")
-
-
-if __name__ == '__main__':
-    unittest.main()
