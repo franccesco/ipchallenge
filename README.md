@@ -6,6 +6,12 @@ These challenges will teach you to make a simple project that will request JSON 
 
 These challenges will _not_ make you an expert in Python, but it will force you to research on those subjects, try to learn about them, and make your own unit tests, experiments, add your own functionality and even **CHANGE** the behavior of these challenges!
 
+## How To Start
+* [Forewords](https://github.com/franccesco/ipchallenge/wiki/Forewords)
+* [Setting Up Everything](https://github.com/franccesco/ipchallenge/wiki/Setting-Up)
+
+***
+
 # Challenges
 There are main 10 challenges and 2 bonus challenges if you want to run the extra mile.
 
