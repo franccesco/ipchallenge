@@ -12,14 +12,8 @@ class TestIPInfo(unittest.TestCase):
         self.test_ip = '8.8.8.8'
         self.ip_info = IPInfo(self.test_ip)
 
-    def test_ip_info_class_attributes_count(self):
-        """Test attributes in self.class"""
-        attribute_count = (len(self.ip_info.__dict__.keys()))
-        self.assertEqual(attribute_count, 1,
-                         msg="There's more than one 'self.' in that class.")
-
     def test_if_ip_data_return_dictionary(self):
         """Test if self.ip_info.ip_data returns a JSON line."""
         self.assertIsInstance(self.ip_info.ip_data, dict,
-                              msg="ip_data doesn't return a dict string.")
+                              msg="ip_data doesn't return a dictionary.")
         self.assertTrue(dumps(self.ip_info.ip_data))

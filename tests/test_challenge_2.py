@@ -16,7 +16,8 @@ class TestIPInfoCreation(unittest.TestCase):
         self.assertTrue(isfile)
         with open(self.class_file) as rdata:
             module_contents = rdata.read()
-        self.assertIn(self.class_string, module_contents)
+        self.assertIn(self.class_string, module_contents,
+                      msg="You haven't created the class IPInfo")
 
 
 class TestIncludeInit(unittest.TestCase):
